@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+
+@font-face {
+    font-family: 'masky';
+    src: url(/src/fonts/Masky.ttf);
+}
+
+@font-face {
+    font-family: 'Titulo';
+    src: url(/src/fonts/CaslonGraphique-Opti.otf);
+}
+
+.productContent {
+    padding-top: 7%;
+    position: relative;
+    overflow: hidden;
+}
+
+.newProductContainer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://spottswoode.com/wp-content/uploads/2020/01/SPW_VineyardTunnel_web.jpg');
+    z-index: 2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
+}
+
+.newProductContainer::before {
+    content: '';
+    position: absolute;
+    top: -300%;
+   
+    left: 30%;
+    width: 150%;
+    
+    height: 150%;
+    background: rgb(192, 197, 197);
+    background: linear-gradient(189deg, rgba(192, 197, 197, 1) 0%, rgba(109, 109, 109, 1) 100%);
+    
+    transform: rotate(26deg);
+    
+    transform-origin: 0 100%;
+   
+    z-index: 4;
+    rotate: 96deg
+}
+
+.newProductContainer::after {
+    content: '';
+    position: absolute;
+    top: -140%;
+
+    left: 130%;
+    width: 28%;
+
+    height: 150%;
+    background: rgb(192, 197, 197);
+    background: linear-gradient(189deg, rgba(192, 197, 197, 1) 0%, rgba(109, 109, 109, 1) 100%);
+
+    transform: rotate(26deg);
+
+    transform-origin: 0 100%;
+
+    z-index: 7;
+    rotate: 186deg
+}
+
+.bottleContainer {
+    position: absolute;
+    top: 5%;
+    left: 52%;
+    transform: translate(-20%, -10%);
+    z-index: 6;
+}
+
+.bottleContainer img {
+    width: 90%;
+    display: block;
+
+    z-index: 6;
+    position: relative;
+}
+
+.medalContainer {
+    max-width: 350px;
+    display: flex;
+    flex-direction: row;
+    color: #000000;
+    font-weight: 600;
+    font-size: 19px;
+    align-items: center;
+}
+
+.medalContainer img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.textContainer {
+    position: absolute;
+    top: 38% !important;
+    /* Ajustar según sea necesario */
+    left: 20%;
+    transform: translate(-50%, -35%);
+    color: white;
+    /* o cualquier color que necesites */
+    max-width: 35%;
+    z-index: 5;
+    /* Asegúrate de que el texto esté sobre el pseudo-elemento `::before` */
+}
+
+.bodegaName {
+    font-size: 20px;
+    /* Ajustar tamaño según sea necesario */
+    font-weight: bold;
+    /* Si se necesita negrita */
+    margin: 0;
+    padding: 0.5rem 0;
+    padding-left: 20%;
+    padding-top: 3%;
+    font-family: 'Raleway', sans-serif;
+    color: #000000;
+
+}
+
+.bodegaName::before {
+    content: '';
+    position: absolute;
+    top: 4.5%;
+    left: 0% !important;
+    width: 80px;
+    /* O la longitud que prefieras para las líneas */
+    height: 2px;
+    /* El grosor de la línea */
+    background: #402D41;
+    /* El color de la línea */
+    transform: translateY(-50%);
+}
+
+.bodegaName::before {
+    left: -60px;
+    /* Ajusta la distancia desde el texto al gusto */
+}
+
+.bodegaName::after {
+    right: -60px;
+    /* Ajusta la distancia desde el texto al gusto */
+}
+
+.varietal {
+    font-size: 70px !important;
+    
+    font-weight: normal;
+    margin: 0;
+    padding: 0.5rem 0;
+    font-family: 'Titulo', sans-serif;
+    color: #000000;
+
+
+}
+.featuresContainer{
+    padding-top: 10%;
+}
+
+.featuresTitle{
+    font-family: 'Raleway', sans-serif;
+    color: #000000;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.featureText{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.description {
+    font-size: 17px;
+   font-weight: 500;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+.priceBuyContainer {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    text-align: right;
+    z-index: 10;
+    
+}
+
+.price {
+    font-size: 2.5rem;
+    color: #000000;
+    margin: 0 0 0.5rem 0;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+
+.buyButton {
+    font-size: 1.2rem;
+   
+    color: #fff;
+    
+    background-color: #000000;
+    
+    border: none;
+    border-radius:   25px 25px 0 0;
+    padding: 0.5rem 2rem;
+    /* Ajusta el relleno según sea necesario */
+    padding-top: 1rem;
+    width: 150px;
+
+    height: 100px;
+    cursor: pointer;
+    /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+    transition: background-color 0.3s ease;
+    /* Añade transición para efecto al pasar el ratón */
+    font-family: 'Raleway', sans-serif;
+}
+
+.buyButton:hover {
+    background-color: #545454;
+    /* Aclara el botón un poco cuando se pasa el ratón */
+}
+
+
+
+
+@media (max-width:500px) {
+    .newProductContainer {
+        background: linear-gradient(0deg, rgba(89, 89, 89, 0.842), rgba(0, 0, 0, 0.162)), #dcdada;
+
+    }
+
+    .newProductContainer::after {
+        display: none;
+    }
+
+
+
+    .bottleContainer {
+        position: absolute;
+        top: 5%;
+        left: -80%;
+        transform: translate(36%, -8%);
+        z-index: 6;
+    }
+
+    .bottleContainer img {
+        width: 5000px !important;
+        display: block;
+        z-index: 6;
+        position: relative;
+    }
+
+
+    .textContainer {
+        position: absolute;
+        top: 35% !important;
+        transform: translate(-50%, -35%);
+        max-width: 100%;
+        z-index: 5;
+    }
+
+    .bodegaName {
+        font-size: 28px;
+        margin-bottom: -15px;
+        font-family: "Sedan", serif;
+        color: #000000;
+
+    }
+
+    .varietal {
+        font-size: 50px !important;
+        font-weight: normal;
+        font-family: "Open Sans", sans-serif;
+        color: #000000;
+        padding-left: 30%;
+        font-weight: 500;
+    }
+
+    .medalContainer {
+        position: relative;
+        left: 30%;
+        display: flex;
+        flex-direction: row;
+
+
+    }
+
+    .medalContainer p {
+        font-size: 22px;
+        font-family: "masky", serif;
+        color: #000000;
+    }
+
+    .medalContainer img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .featuresContainer {
+        position: relative;
+        left: 30%;
+        margin-top: 15%;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .featuresTitle {
+        font-size: 22px;
+        font-weight: 600;
+        color: #000000;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .featureText {
+        color: #e6e6e6;
+    }
+
+    .priceBuyContainer {
+        position: absolute;
+        bottom: 0;
+        width: 50%;
+        right: 50%;
+        text-align: right;
+        z-index: 10;
+
+    }
+
+    .price {
+        font-size: 2.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 0.5rem 0;
+        color: #000000;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .AttachMoneyIcon {
+        font-size: 40px !important;
+
+    }
+
+    .buyButton {
+        font-size: 1rem;
+        color: #fff;
+        background-color: #000000;
+        border-radius: 25px;
+        width: 180px;
+        padding: 10px;
+
+        height: auto;
+        margin-bottom: 10%;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .navIconContainer {
+        display: flex;
+        flex-direction: row;
+        margin-top: 12%;
+        padding-left: 5%;
+        padding-right: 8%;
+        margin-bottom: 5rem;
+        justify-content: space-between;
+    }
+
+    .ArrowBackIcon {
+        font-size: 50px !important;
+    }
+
+    .ShoppingCartIcon {
+        font-size: 40px !important;
+    }
+
+
+
+
+    .description {
+        display: none;
+    }
+
+    .bodegaName::before {
+        display: none;
+    }
+
+    .navIconContainer {
+        position: inherit;
+        z-index: 1000 !important;
+    }
+
+
+
+}

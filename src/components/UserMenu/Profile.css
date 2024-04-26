@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+.contenedor{
+    background-color: rgba(255, 255, 255, 0.345) !important;
+    border-radius: 20px !important;
+    
+}
+
+.form-control{
+    color: #FFFFFF;
+}
+
+.contenedor_profile{
+    margin-top: 6.5rem;
+    
+
+    background-color: rgba(0, 0, 0, 0.187);
+}
+
+.username{
+    font-family: "Expletus Sans", sans-serif;
+    font-size: 3rem;
+    color: #FFFFFF;
+    margin-top: 5rem;
+}
+
+.mail{
+    font-family: "Expletus Sans", sans-serif;
+    font-size: 2rem;
+    color: #9c9c9c !important;
+}
+
+.contraseña{
+    font-family: "Expletus Sans", sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    transition: all .5s ease-in-out;
+}
+
+.contraseña:hover{
+    text-decoration: underline;
+}
+
+.tituloUpdate{
+    font-family: "Expletus Sans", sans-serif;
+}
+
+@media (max-width:500px){
+    .contenedor_profile{
+        margin-top: 0;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between;
+        
+        
+    }
+
+    .contenedor{
+        background: rgb(192,197,197);
+        background: linear-gradient(189deg, rgba(192,197,197,1) 0%, rgba(252,252,252,1) 100%);
+        background-color: #9c9c9c00 !important;
+        border-radius: 0 !important;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0 !important;
+        padding-top: 100px;
+        height: 100vh;
+    }
+    .username, .mail{
+        color: #000000 !important;
+        margin-top: 2%;
+        
+    }
+
+    .contraseña{
+        color: #3b3b3b;
+    }
+    
+    .formContainerUpdateProfile{
+        display: flex;
+        flex-direction: column;
+       
+        
+    }
+    .mainFormContainerUpdate{
+        margin-top: 0% !important;
+    }
+    
+    .tituloUpdate{
+        font-family: "Sedan", serif !important;
+        font-size: 35px;
+        color: #000000;
+        margin: auto;
+    }
+
+    .successButtonUpdate{
+        background-color: #000000;
+        color: #FFFFFF;
+        border-radius: 25px !important;
+    }
+
+    .updateArrowBackIcon{
+        font-size: 50px !important;
+        color: #000000;
+        margin-top: 120px;
+        
+        
+    }
+    
+
+
+
+
+
+}

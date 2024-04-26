@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.mainFrameContainer{
+    height: 100vh !important;
+    width: 100vw !important;
+    
+}
+
+.description-mobile{
+  display: none;
+}
+
+.index_container{
+    overflow: hidden;
+    background-color: #E7E3D7;
+    max-width: 100% !important;
+    
+
+}
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    height: 100%; 
+    position: relative; 
+    background-color: #E7E3D7;
+    text-align: center;
+  }
+  
+.titulo {
+   
+    margin: 0;
+    padding: 0;
+    z-index: 2; 
+    color: #3D0101;
+    align-self: flex-start;
+    margin-left: 5%;
+    font-family: Tangerine !important;
+    font-weight: 500;
+    font-size: 4rem;
+  }
+  
+.mainImgContainer {
+    align-self: flex-end; 
+    margin-right: 6rem;
+    width: 45%; 
+    max-width: 100%; 
+    height: auto; 
+    order: -1; 
+    position: absolute;
+    bottom: 0;
+  }
+  
+.logo {
+    margin-top: 20px; /* Espacio por encima del logo */
+    width: 100%; /* O un tamaño específico según lo necesites */
+    position: absolute;
+    bottom: 0; /* Alinea el logo en la parte inferior del contenedor */
+    left: 50%; /* Centra el logo horizontalmente */
+    transform: translateX(-50%); /* Compensa el desplazamiento a la izquierda */
+    color: #000000 ;
+    font-family: 'Tangerine', sans-serif;
+    font-size: 3rem;
+
+}
+
+/* Divider */
+
+
+.dividerContainer{
+  position: relative; 
+  font-family: 'Playfair Display', serif;
+  color: #d4af37;
+  background-color: #E7E3D7;
+  min-height: 15rem;
+  display: inline-flex;
+  width: 100%;
+  overflow-y: hidden !important;
+}
+
+.titleContainer {
+    position: relative; /* Necesario para el posicionamiento absoluto de .subtitle */
+    width: 70%;
+  }
+  
+.title {
+    font-size: 96px; /* O lo suficientemente grande para la letra sobre la que se superpondrá el texto */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    display: inline-block; /* Permite que el contenedor se ajuste al contenido */
+    position: relative; /* Posicionamiento relativo para la superposición del subtítulo */
+    color: red !important; /* Color dorado para la letra grande */
+    top: 1rem !important;
+    font-weight: 700;
+    left: 2rem;
+    margin-top: 3.2rem;
+    
+  }
+  
+.subtitle {
+    position: absolute; /* Posiciona absolutamente el subtítulo */
+    top: 40%; /* Ajusta estos valores según el tamaño de tu fuente */
+    left: 2.5rem;
+    transform: translate(0, -50%); /* Centra el texto verticalmente */
+    font-size: 24px; /* Tamaño más pequeño para el texto superpuesto */
+    color: #000; /* Color para el texto superpuesto */
+    font-weight: normal;
+    margin-left: 1.5rem; /* Ajusta según la posición de tu letra grande */
+    font-weight: 900;
+    font-size: 1.7rem;
+    margin-top: -1.2rem;
+    
+  }
+  
+
+  .subtitleContainer {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    height: 100%;
+    padding-right: 2rem;
+    min-height: 12rem; 
+    margin-top: 1.5rem;
+    position: relative;
+    padding-left: 2rem;
+  }
+
+  .subtitleContainer::before {
+    content: ''; 
+    position: absolute;
+    left: 0; 
+    height: 70%;
+    width: .4rem; 
+    border-radius: 4px;
+    background-color: #A97625; 
+    top: 15%; 
+  }
+.description {
+    font-family: 'RAleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #333;
+    
+    
+  }
+
+   /* Footer  */
+
+
+footer {
+    padding: 0 2%; 
+    height: 200px;
+    width: 100% !important;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.ImgContainerFooter {
+  /* Ajusta según sea necesario */
+  width: 200px; /* Ejemplo de ancho fijo, ajústalo según tus necesidades */
+  text-align: center; /* Centra el contenido de img si es necesario */
+}
+
+.leftSideContainers, .rightSideContainers {
+  /* Ajuste opcional: si necesitas que estos contenedores tengan un ancho específico para ayudar en el centrado */
+  flex: 1;
+  margin: 0 20px; /* Ajusta el margen para controlar el espacio */
+}
+
+.leftSideContainers {
+  display: flex;
+  align-items: center; /* Centra los elementos hijos verticalmente */
+  justify-content: center; /* Centra los elementos hijos horizontalmente en su contenedor */
+  gap: 80px; /* Ajusta este valor según sea necesario para el espacio entre los divs */
+}
+
+.addressContainer h5{
+  font-family: 'Raleway', sans-serif !important;
+  color: #A97625;
+}
+.addressContainer p{
+  font-family: 'Raleway', sans-serif;
+  color: #000000;
+}
+
+.telContainer h5{
+  font-family: 'Raleway', sans-serif !important;
+  color: #A97625;
+}
+
+.instagram{
+  color: #f09433;
+color: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+color: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+color: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 )
+}
+
+.facebook{
+  color: #4267B2;
+  font-size:25px
+}
+
+.youtube{
+  color: #c4302b;
+  font-size:28px
+}
+
+.whatsapp{
+  color: #019813;
+  font-size:28px
+}
+
+
+
+.rightSideContainers {
+  display: flex;
+  align-items: center; /* Centra los elementos hijos verticalmente */
+  justify-content: flex-end; /* Centra los elementos hijos horizontalmente en su contenedor */
+  gap: 20px; /* Ajusta este valor según sea necesario para el espacio entre los divs */
+}
+
+.newsletterContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.newsletterContainer h5{
+  font-family: 'Raleway', sans-serif;
+  color: #A97625;
+}
+
+.inputButtonContainer {
+  display: flex;
+  align-items: flex-end; /* Esto asegura que el input y el botón estén alineados */
+  height: 36px; /* Puedes ajustar la altura según sea necesario */
+}
+
+
+.newsletterInput {
+  border-radius: 25px 0 0 25px;
+  border: 2.5px solid #3D0101;
+  border-right: none; /* Quita el borde derecho para que se una con el botón */
+  font-family: 'Raleway', sans-serif;
+  padding: 0 12px; /* Añade algo de padding dentro del input */
+  height: 100%; /* Asegúrate de que el input llene el contenedor padre */
+  flex-grow: 1; /* Permite que el input crezca para llenar el espacio */
+  width: 300px;
+}
+.inputButtonContainer input{
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+
+.inputButtonContainer input:focus{
+  color: #000000 !important;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
+.newsletterButton {
+  border-radius: 0 25px 25px 0;
+  border: 2.5px solid #3D0101;
+  border-left: none; /* Quita el borde izquierdo para que se una con el input */
+  background-color: #fff; /* O cualquier color que necesites */
+  padding: 0 12px; /* Añade algo de padding dentro del botón */
+  height: 100%; /* Asegúrate de que el botón llene el contenedor padre */
+  cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el botón */
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+/* Asegúrate de que las imágenes de los iconos y la imagen del footer tengan tamaños apropiados */
+img, .newsletterButton {
+  max-width: 100%;
+  
+}
+
+.creditsContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.creditsContainer p{
+  font-family: 'Raleway', sans-serif;
+  color: #000000;
+}
+
+
+
+/* diseño celular  */
+
+@media (max-width: 500px) {
+  .titulo {
+   
+    margin:  0 auto;
+    margin-top: -70%;
+    z-index: 2; 
+    color: #3D0101;
+    font-family: Tangerine !important;
+    font-weight: 600;
+    font-size: 4rem;
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .mainImgContainer{
+      align-self: flex-start; 
+      width: 100%; 
+      max-width: 100%; 
+      height: auto; 
+      order: -1; 
+      position: absolute;
+      bottom: 0;
+  }
+
+  /* divider */
+  .dividerContainer{
+    background-color: #000000;
+    flex-direction: column;
+    margin-bottom: 4rem;
+  }
+
+  .subtitleContainer{
+    min-height: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .subtitleContainer::before {
+    content: ''; 
+    height: 6px;
+    width: 60vw; 
+    top: 80%;  
+  }
+
+  .subtitle{
+    color: #FFFFFF;
+    top: 70%;
+  }
+  
+
+  .description{
+    display: none;
+  }
+
+
+  .descriptionMobileContainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .description-mobile{
+    font-family: 'RAleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #b0b0b0;
+    width: 90vw;
+  }
+
+
+  /* footer */
+
+  .footerContainer{
+    background-color: #91772a;
+    
+    
+  }
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    
+  }
+
+  .contactContainer{
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .leftSideContainers{
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .addressContainer h5{
+    font-family: 'Raleway', sans-serif !important;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    padding-top: 2rem;
+  }
+
+
+  .addressContainer p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #000000;
+  }
+  
+  .telContainer h5{
+    font-family: 'Raleway', sans-serif !important;
+    color: #000000 !important;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .telContainer{
+    align-content: center;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .instagram{
+    color: #000000;
+;
+  margin-left: 10px;
+  font-size: 30px !important;
+  }
+  
+  .facebook{
+    color: #4267B2;
+    font-size:25px;
+    margin-left: 10px;
+    font-size: 30px !important;
+  }
+  
+  .youtube{
+    color: #c4302b;
+    font-size:28px;
+    margin-left: 10px;
+    font-size: 30px !important;
+  }
+  
+  .whatsapp{
+    color: #019813;
+    font-size:28px;
+    margin-left: 10px;
+    font-size: 30px !important;
+  }
+
+  .rightSideContainers{
+    display: none;
+  }
+
+  .ImgContainerFooter{
+    margin-bottom: 2rem;
+  }
+
+  .PaginatorIndex{
+    margin-bottom: 2rem;
+    font-size: 20px !important;
+    font-weight: 600;
+  }
+
+}

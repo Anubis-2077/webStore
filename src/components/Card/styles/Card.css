@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Caslon';
+    src: url(/src/fonts/CaslonGraphique-Opti.otf);;
+} 
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.productCard{
+    min-width: 200px;
+    max-width: 300px;
+    width: 290px;
+    height: 550px;
+    padding: 1rem;
+    padding-top: 1rem !important;
+    align-self: center;
+    text-align: center;
+    margin: 0; 
+    padding: 0; 
+    border: 1px solid #999999;
+    transition: all ease 1.5s ;
+}
+
+
+
+.productImage{
+    max-width: 75%;
+    margin:auto;
+    
+}
+
+.productYear{
+    font-family: 'Raleway', sans-serif;
+    color: rgb(78, 78, 78);
+    font-size: 1.1rem;
+    margin-top: .8rem;
+}
+
+.productName{
+    font-family: 'Caslon', sans-serif !important;
+    font-size: 1.4rem;
+    color: #A97625;
+    margin-top: .3rem;
+
+}
+
+
+
+.productPoints{
+    font-family: 'Raleway', sans-serif;
+    color: rgb(78, 78, 78);
+    font-size: 1.1rem;
+    font-weight: 600;
+    
+}
+
+.productPrice{
+    font-family: 'Raleway', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    margin-bottom: .5rem; 
+}
+
+
+@media (max-width:500px) {
+    .productCard{
+        height: fit-content;
+        padding: 15px 0;
+    }
+}
+

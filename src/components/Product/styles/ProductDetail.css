@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.productContainer{
+    display: flex;
+    padding: 2rem;
+    padding-right: 0;
+    background-color: rgb(61, 61, 61);
+    height: 100vh;
+}
+
+.productDetail{
+    display: flex;
+}
+
+.image img{
+   min-width: 60rem;
+   position: relative;
+   top: 2rem;
+    
+   
+    
+}
+
+.productInfo{
+    padding-top: 2rem;
+}
+
+.productInfo p{
+    color: rgb(113, 106, 113);
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;
+}
+
+.productInfo h2{
+    font-family: "Expletus Sans", sans-serif;
+    font-size: 4rem;
+    
+}
+
+.productInfo .precio {
+    font-size: 4rem;
+    font-family: "Raleway", sans-serif;
+}
+
+.cartInfoContainer{
+    padding-top: 4rem;
+    max-height: 50rem;
+    
+}

@@ -1,0 +1,311 @@
+.cardContainer {
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: #E7E3D7 !important;
+
+}
+.containerCardComponent{
+    margin-top: -5% !important;
+    width: 100% !important ;
+    display: flex !important;
+
+    
+}
+
+.chakra-card {
+    margin-bottom: 20px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+    border-radius: 25px !important;
+
+}
+
+.separator {
+    border: 1px solid black;
+    width: 30vw;
+}
+
+.link {
+    margin-right: 20px;
+    color: #3483fa;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.resumeContainerComponent{
+    margin-left: 25%;
+    position: fixed !important;
+    margin-top: -30%;
+}
+
+
+
+/* conuter */
+
+.inputCount {
+    color: #000000;
+    background-color: #FFFFFF;
+    border: none !important;
+    height: 40px;
+    margin: 0;
+    font-size: 20px;
+
+}
+
+.inputCountContainer {
+    height: fit-content;
+    margin-top: 5%;
+    border: solid 1px black;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    padding: 2px;
+    width: 300px !important;
+
+
+}
+
+.inputButton {
+
+    background-color: #FFFFFF !important;
+    font-size: 30px !important;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+
+}
+
+.inputButton:hover {
+    background-color: #83b2f8;
+    ;
+}
+
+/* precio */
+
+.precioContainer {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+
+.precio {
+    font-size: 30px;
+    margin-right: -2rem;
+}
+
+/* resume */
+.resumeContainer {
+    background-color: #E7E3D7 !important;
+}
+
+.cardHeaderContainer {
+    padding-bottom: 0 !important;
+}
+
+.cardHeaderTitle {
+    color: #000000;
+    font-size: 25px;
+}
+
+.cardBodycontainer {
+    padding-bottom: 0 !important;
+}
+
+.resumeContainerComponent{
+    
+    position: fixed;
+    top: 70%;
+    right: 8%;
+    padding: 5px;
+    background-color: #FFFFFF;
+
+}
+
+
+/* mobile version */
+@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+
+@media (max-width:500px) {
+
+
+    .containerCardComponent {
+        display: flex !important;
+        flex-direction: column !important;
+        background-color: #FFFFFF;
+    }
+    
+
+
+    .cardContainer {
+        margin-top: 10%;
+        border-radius: 25px;
+        background-color: #FFFFFF !important;
+        max-height: fit-content;
+        width: 100% ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow-x: scroll;
+
+    }
+    .cardContainerComponent{
+        display: flex !important;
+        flex-direction: row !important;
+        height: 250px !important;
+    }
+    .cardImageCart{
+        width: 30%;
+        margin-left: -5%;
+        margin-right: 2%;
+    }
+
+    .nombreProducto{
+        font-family: "Sedan", serif !important;
+        margin-left: -15%;
+        
+    }
+    
+    
+    .link {
+        margin-right: 20px;
+        color: #3483fa;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    .linkContainer {
+        margin-top: -2% !important;
+        margin-left: -40%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+   
+    .cardBottomContainer{
+        display: flex ;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .inputCountContainer {
+
+        margin-left: 12%;
+        border: none !important;
+        width: 150px !important;
+    }
+
+    .priceContainer{
+
+        display: flex;
+        flex-direction: row;
+        margin-left: -20%;
+        margin-top: -12%;
+        align-items: center;
+        
+    }
+    .precio{
+        font-family: "Sedan", serif !important;
+        font-size: 25px;
+    }
+
+    .AttachMoneyIcon{
+        font-size: 40px !important;
+    }
+
+    #mainContainerCartPage {
+        height: auto; 
+        display: flex;
+        flex-direction: column; 
+        margin-bottom: 40% !important
+        
+    }
+    
+    
+    .containerCardComponent {
+        flex: 1; 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .cardHeaderContainer, .firstDivider{
+        display: none;
+    }
+    
+    .resumeContainer{
+        width: 100%;
+        background-color: #FFFFFF !important;
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .resumeContainerComponent{
+        
+        left: 0%;
+        height: 200px;
+        
+        background-color: #FFFFFF;
+        width: 100%;
+        position: fixed !important;
+        margin-top: 10% !important;
+
+    }
+
+    .successButton{
+        background-color: #000000 !important;
+        border-radius: 20px !important;
+        height: 45px !important;
+        margin: 0;
+    }
+
+    .cardBodycontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-bottom: 5%;
+    }
+    .cardFooterResume{
+        padding: 0 !important;
+        margin: auto;
+        margin-bottom: 2%;
+        
+    }
+
+    #mainContainerCartPage{
+        background-color: #FFFFFF;
+    }
+
+    .cartTitleContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; 
+        margin-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%; 
+      }
+      
+      .cartTitle {
+        flex-grow: 1; 
+        text-align: center; 
+        font-size: 22px;
+        
+      }
+      
+      
+      .ArrowBackIcon, .placeholder {
+        flex-basis: 50px; 
+      }
+      
+      .placeholder {
+        background-color: #FFFFFF;
+      }
+}

@@ -1,0 +1,91 @@
+.successPageContainer{
+    width: 100%;
+    height: fit-content;
+    background-image: url(https://lugaresysabores.com/webfiles/lugaresysabores/novedades/11860/1.jpg);
+    background-size: cover;
+    margin-top: -5%;
+}
+
+
+
+.FormControl {
+    font-family: var(--chakra-fonts-body);
+    margin-top: var(--chakra-space-5);
+    padding: var(--chakra-space-3);
+    border-width: 1px;
+    border-radius: 12px;
+    overflow-x: auto;
+
+
+}
+
+.successContainer {
+    max-width: 80% !important;
+    margin-top: 5%;
+}
+
+Input {
+    border: 1px black solid !important;
+    color: #000000
+}
+
+Input:focus {
+
+    color: #000000 !important
+}
+
+.SimpleGridSuccess{
+    background-color: #c8c8c89f;
+}
+
+.submitbuttonsuccess{
+    background-color: #000000 !important;
+    border-radius: 25px !important;
+    color: #FFFFFF !important;
+    width: 100%;
+    margin: auto;
+}
+
+.submitbuttonsuccess:hover{
+    background-color: #ffffff00 !important; 
+    border: #000000 1px solid;
+    color: #000000 !important;
+}
+@media (max-width:500px) {
+    .SimpleGridSuccess {
+        width: fit-content;
+        width: 350px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.854);
+        
+        
+
+    }
+
+    .successContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(https://th.bing.com/th/id/OIP.F-NpFGcelr9aOP--UN2hDQHaNK?rs=1&pid=ImgDetMain);
+        background-size: contain;
+        width: 100% !important;
+        margin-top: 0;
+
+
+    }
+
+    .formContainerSuccess{
+        width: 130%;
+        align-self: center !important;
+        margin-left: -15%;
+    }
+    .submitbuttonsuccess{
+        width: 95%;
+        margin-top: 2rem !important;
+        background-color: #000000 !important;
+        border-radius: 25px !important;
+    }
+    
+}

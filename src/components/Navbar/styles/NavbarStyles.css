@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.navbarContainer{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.637);
+    backdrop-filter: blur(5malpx);
+    position: fixed;
+    z-index: 100000;
+    width: 100vw;
+    height: 100px !important;
+}
+
+.logoContainer{
+    max-width: 140px;
+    margin-left: -10%;
+    
+}
+
+#companyName{
+    font-family: 'Tangerine', cursive !important;
+    font-size: 50px;
+    color: #ffffff;
+    margin-top: .5rem;
+
+}
+
+
+
+/* Searchbar */
+
+.searchContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24rem; 
+    top: -.5rem;
+
+}
+
+  
+.searchInput {
+    width: 0;
+    padding: 10px;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    color: #FFFFFF;
+    border-radius: 25px;
+    opacity: 0;
+    transition: width 0.8s ease-in-out, opacity 0.3s ease;
+    cursor: pointer;
+    margin-top: .5rem;
+    border: solid 2px #FFFFFF !important;
+}
+  
+.searchInput.expanded {
+    width: 25rem; /* o el ancho que desees */
+    opacity: 1;
+    cursor: text;
+    margin-right: 1rem;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border: solid 2px #FFFFFF !important;
+    
+  }
+
+.searchInput:focus{
+    border: 2px solid rgb(255, 255, 255) !important;
+    background-color: transparent
+}
+
+  
+SearchIcon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF !important;
+}
+
+.searchIconNav{
+    font-size: 30px !important;
+}
+
+
+
+/* User menu */
+
+.userIconContainer{
+    margin-top: 15%;
+    margin-left: 25%;
+
+}
+
+.personIcon{
+    transition: all ease-in-out .8s !important;
+    font-size: 2rem !important;
+    
+    color: #FFFFFF;
+}
+.personIcon:hover{
+    color: #bababa !important;
+}
+
+.ulUser{
+    list-style: none; 
+    
+
+}
+
+.cartIconContainer{
+    margin-top: -43%;
+}
+
+.cartIconContainer .cartIcon{
+    font-size: 2rem !important;
+    transition: all ease-in-out .8s !important;
+}
+
+.cartIcon:hover{
+    color: #bababa !important;
+}
+
+
+.logoContainer{
+    margin-top: -2%;
+}
+
+
+@media (max-width: 500px){
+    .navbarContainer{
+        background-color: #ffffff9c;
+        max-width: 100%;
+        
+    }
+
+    .logoContainer img{
+        position: sticky;
+        width: 140px !important ;
+        margin-left: -3%;
+        transition: width 2s ease-in-out, opacity 2s ease;
+    }
+
+
+    
+
+    .navbarShorcuts{
+        display: none;
+    }
+
+    
+.searchContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px; 
+    top: -.5rem;
+    right: -10%;
+    padding-right: 15%;
+}
+
+  
+.searchInput {
+    color: #000000;
+    border: solid 2px #010101 !important;
+    transition: all ease-in-out 2s;
+    
+}
+  
+.searchInput.expanded {
+    width: 280px; 
+    color: rgb(0, 0, 0);
+    background-color: rgba(191, 191, 191, 0.596);
+    border: solid 2px #000000 !important;
+    
+  }
+.searchInput:focus{
+    border: 2px solid rgb(0, 0, 0) !important;
+    background-color: rgba(191, 191, 191, 0.596);
+    
+}
+
+#SearchIcon {
+    color: #080808 !important;
+}
+
+
+
+.iconsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    
+    width: auto; 
+}
+
+.cartIconContainer, .userIconContainer {
+    flex: 2; /* Esto asigna el mismo espacio a cada contenedor de íconos dentro de .iconsContainer */
+}
+
+.cartIcon, .personIcon{
+    font-size: 1.8rem; /* Asumiendo que quieras el mismo tamaño de fuente para ambos */
+    color: #000000; /* Establece el color negro para ambos íconos */
+}
+
+.cartIcon{
+    margin-top: 12px !important;
+    margin-left: 0px;
+    color: #000000 !important;
+}
+
+.cartIcon:hover, .personIcon:hover{
+    color: #000000 !important; /* Esto se asegura de que el color negro se mantenga al pasar el ratón por encima */
+}
+.personIcon{
+    margin-left: -60%;
+}
+.loginIcon{
+    margin-top: -15% !important;
+    margin-right: 15%;
+}
+
+
+
+/* Elimina los estilos predeterminados de lista para los ítems dentro de .userIconContainer */
+.ulUser {
+    list-style: none;
+    padding: 0; /* Esto elimina el padding por defecto que tienen las listas */
+    margin: 0; /* Esto elimina el margen por defecto que tienen las listas */
+}
+
+.ulUser li {
+    display: inline-block; /* Esto hace que los elementos de la lista sean en línea para que no ocupen todo el ancho */
+}
+
+/* Asegúrate de que los enlaces dentro de .userIconContainer no tienen margen o padding extra */
+.ulUser li .nav-link {
+    padding: 0;
+    margin: 0;
+    color: #000000; /* Establece el color negro para los enlaces */
+    text-decoration: none; /* Esto elimina el subrayado por defecto */
+}
+
+.ulUser li .nav-link:hover {
+    text-decoration: underline; /* Esto añade un subrayado al pasar el ratón por encima, o cualquier otro estilo que prefieras */
+}
+
+    
+}

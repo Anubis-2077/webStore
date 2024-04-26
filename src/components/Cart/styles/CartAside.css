@@ -1,0 +1,159 @@
+
+.chakra-slide{
+    background: rgb(192,197,197) !important;
+    background: linear-gradient(189deg, rgba(192,197,197,1) 0%, rgba(252,252,252,1) 100%) !important;
+}
+
+.headingContainer{
+    display: flex;
+    padding-bottom: 0 !important;
+    justify-content: center;
+    width: 100% ;
+}
+
+.headingText{
+    color: black !important;
+    font-size: 18px !important;
+}
+
+.drawerBody{
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.draweCloseButton{
+    font-size: 20px !important;
+    margin-top: 2.7%;
+    margin-right: 4%;
+}
+
+.cartTableMain {
+    height: 180px;
+    border: solid 1px #00000000;
+    align-content: center;
+    font-size: 18px;
+    text-align: left;
+    color: #000000;
+}
+
+.cartTableMain img{
+    width: 120px !important;
+    height: auto !important;
+    
+}
+
+.tdPrecio{
+    
+    font-weight: 800;
+    padding-left: 15px;
+}
+
+.cartAsideFooter{
+    height: 100px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+.cartAsideButton{
+    width: 40%;
+    border-radius: 25px !important;
+    background-color: #000000 !important;
+    border: none !important;
+    color: #FFFFFF !important;
+    margin-bottom: 5px;
+    font-size: 17px !important;
+    height: 40px !important;
+    transition: all ease-in-out 1s;
+    
+}
+
+.cartAsideButton:hover{
+    background-color: #ffffff !important;
+    border: #000000 solid 1px !important;
+    color: #000000 !important;
+}
+
+
+
+
+
+@media (max-width:500px) {
+    .chakra-slide{
+        background: rgb(192,197,197) !important;
+        background: linear-gradient(189deg, rgba(192,197,197,1) 0%, rgba(252,252,252,1) 100%) !important;
+    }
+    
+    .headingContainer{
+        display: flex;
+        padding-bottom: 0 !important;
+        justify-content: center;
+        width: 100% ;
+    }
+    .headingText{
+        color: black !important;
+        margin-top: 10% !important;
+        font-size: 18px !important;
+    }
+
+    .drawerBody{
+        background-color: rgba(0, 0, 0, 0) !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+    
+    .draweCloseButton{
+        font-size: 20px !important;
+        margin-top: 4%;
+        margin-right: 2%;
+    }
+
+    .cartTableMain {
+        height: 8rem;
+        border: solid 1px #00000000;
+        align-content: center;
+        font-size: 17px;
+        text-align: left;
+        color: #000000;
+    }
+
+    .cartTableMain img{
+        width: 80px !important;
+        height: auto !important;
+        margin-left: -35%;
+    }
+    .cartTableMain{
+        width: 100% !important;
+    }
+
+    .cartAsideFooter{
+        display: flex !important;
+        width: 100% !important;
+        flex-direction: row;
+        margin-bottom: 15px !important;
+        position: fixed;
+        top: 90%;
+        background-color: #FFFFFF;
+        bottom: -2%;
+    }
+    .cartAsideButton{
+        width: 90% !important;
+        border-radius: 25px !important;
+        background-color: #000000 !important;
+        border: none !important;
+        color: #FFFFFF !important;
+        margin-bottom: 5px;
+        font-size: 17px !important;
+        
+    }
+
+    .tdPrecio{
+        text-align: right;
+        font-weight: 800;
+        padding-left: 15px;
+    }
+}
+

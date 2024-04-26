@@ -1,0 +1,45 @@
+.DetalleEnvioPage{
+    background-image: url(https://lugaresysabores.com/webfiles/lugaresysabores/novedades/11860/1.jpg);
+    display: flex;
+    justify-content: center;
+}
+
+#formContainerDetalleEnvio{
+    width: 100% !important;
+}
+
+.DetalleEnvioPageForm{
+    background-color: #ffffffcc;
+    
+    
+
+}
+
+#CustomInputEnvio, #prestador, #numero_envio, #estado{
+    width: 100%;
+    
+}
+
+label{
+    font-size: 17px !important;
+}
+
+input{
+    border-radius: 5px;
+    height: 35px;
+    
+}
+
+
+
+@media (max-width:500px) {
+    .DetalleEnvioPageForm{
+        background-color: #ffffffcc;
+        width: 350px;
+        margin-left: -55%;
+    
+    }
+
+    
+}
+
