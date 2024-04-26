@@ -4,7 +4,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
-import Navbar from "../Navbar/Navbar";
+
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 
@@ -73,11 +73,14 @@ const Profile = () => {
     }
   };
 
-  const [showNavbar, setShowNavbar] = useState(window.innerWidth >= 1200);
+
+
+  
+  const [showArrowBack, setShowArrowBack] = useState(window.innerWidth <= 500);
 
   useEffect(() => {
     const handleResize = () => {
-      setShowNavbar(window.innerWidth >= 1200);
+      setShowArrowBack(window.innerWidth <= 500);
     };
 
     window.addEventListener("resize", handleResize);
@@ -85,8 +88,6 @@ const Profile = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
-  const [showArrowBack, setShowArrowBack] = useState(window.innerWidth <= 500);
 
   const navigate = useNavigate();
 
@@ -96,7 +97,7 @@ const Profile = () => {
 
   return (
     <div>
-      {showNavbar && <Navbar />}
+      
       
 
       <div>

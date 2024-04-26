@@ -117,7 +117,7 @@ const NewProductPage = () => {
             {producto.nombre}
           </h2>
           <div className="medalContainer">
-            <img src="/src/images/goldMedal.png" alt="" />
+            <img src="/images/goldMedal.png" alt="" />
             <p className="medalText">97 pts medalla de oro</p>
           </div>
           <div className="featuresContainer">

@@ -4,6 +4,7 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -21,8 +22,8 @@ const Footer = () => {
 
   const imageUrl =
     windowWidth < 500
-      ? "/src/images/dancer-no-bg.png"
-      : "/src/images/dancer.png";
+      ? "/images/dancer-no-bg.png"
+      : "/images/dancer.png";
 
   return (
     <div className="footerContainer">
@@ -62,7 +63,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="creditsContainer">
-          <p>Diseñado y realizado por Anubis</p>
+          <p>Diseñado y realizado por <Link to="https://github.com/Anubis-2077/">Anubis</Link></p>
         </div>
       </footer>
     </div>

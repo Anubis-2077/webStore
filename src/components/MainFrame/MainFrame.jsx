@@ -8,7 +8,7 @@ const MainFrame = ({ setSearchTerm }) => {
       <Navbar setSearchTerm={setSearchTerm} />
       <div className="contentContainer">
         <h2 className="titulo">Que cada vino sea un Ritual.</h2>
-        <img src="/src/images/copa.jpg" alt="" className="mainImgContainer" />
+        <img src="/images/copa.jpg" alt="" className="mainImgContainer" />
         <h1 className="logo">Ritual del Vino</h1>
       </div>
     </div>

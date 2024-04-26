@@ -71,8 +71,8 @@ const CreateAccount = () =>{
                 <section className="ftco-section_new_user ">
                 <div className="container_new_user justify-content-center">
                   <div className="row justify-content-center">
-                    <div className="col-md-6 text-center mb-5">
-                      <h2 className="heading-section">Vinoteca Lorem</h2>
+                    <div className="row-md-6 text-center mb-5">
+                      <h2 className="heading-section">Online Store</h2>
                     </div>
                   </div>
                   <div className="row justify-content-center contenedor_texto_new_user" >

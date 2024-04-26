@@ -3,7 +3,7 @@ import './styles/NavbarStyles.css'
 const Logo = ()=>{
     return(
         <div className="logoContainer">
-            <Link to="/" style={{textDecoration: 'none'}}> <img src="/src/images/logo.png"  alt="Ritual del vino almacen de bebidas" /> </Link>
+            <Link to="/" style={{textDecoration: 'none'}}> <img src="/images/logo.png"  alt="Ritual del vino almacen de bebidas" /> </Link>
         </div>
     )
 };
