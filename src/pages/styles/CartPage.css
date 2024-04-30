@@ -1,3 +1,6 @@
+/* mobile version */
+@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+
 .cardContainer {
     overflow: hidden;
     border-radius: 25px;
@@ -125,8 +128,7 @@
 }
 
 
-/* mobile version */
-@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+
 
 @media (max-width:500px) {
 
