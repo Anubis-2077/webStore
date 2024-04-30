@@ -1,6 +1,7 @@
 import Navbar from "../Navbar/Navbar";
 import PropTypes from 'prop-types'
-import copa from '../../assets/images/copa.jpg'
+import copa from '/images/copa.jpg'
+
 
 const MainFrame = ({ setSearchTerm }) => {
   

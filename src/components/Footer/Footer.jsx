@@ -63,7 +63,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="creditsContainer">
-          <p>Diseñado y realizado por <Link to="https://github.com/Anubis-2077/">Anubis</Link></p>
+          <p>Diseñado y realizado por <Link to="https://escobargerardodev.netlify.app/">Gerardo Escobar</Link></p>
         </div>
       </footer>
     </div>
